@@ -61,7 +61,7 @@ class CategoryDetailScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(tx.title, style: const TextStyle(fontWeight: FontWeight.w600)),
-                            Text('-\\$${tx.amount.toStringAsFixed(2)}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.redAccent)),
+                            Text('-\$${tx.amount.toStringAsFixed(2)}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.redAccent)),
                           ],
                         ),
                       ),

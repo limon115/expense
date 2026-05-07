@@ -34,7 +34,7 @@ class DashboardScreen extends StatelessWidget {
               children: [
                 Text('TOTAL BALANCE', style: TextStyle(color: Colors.white.withOpacity(0.6), letterSpacing: 1.2, fontSize: 12)),
                 const SizedBox(height: 10),
-                Text('\\$${data.totalBalance.toStringAsFixed(2)}', style: const TextStyle(fontSize: 42, fontWeight: FontWeight.bold)),
+                Text('\$${data.totalBalance.toStringAsFixed(2)}', style: const TextStyle(fontSize: 42, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 30),
                 Row(
                   children: [
@@ -73,7 +73,7 @@ class DashboardScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '${tx.type == TransactionType.income ? '+' : '-'} \\$${tx.amount.toStringAsFixed(2)}',
+                      '${tx.type == TransactionType.income ? '+' : '-'} \$${tx.amount.toStringAsFixed(2)}',
                       style: TextStyle(fontWeight: FontWeight.bold, color: tx.type == TransactionType.income ? Colors.greenAccent : Colors.white),
                     )
                   ],
